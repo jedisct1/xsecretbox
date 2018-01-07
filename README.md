@@ -1,0 +1,2 @@
+# xsecretbox
+Go implementation of crypto_secretbox_xchacha20poly1305
