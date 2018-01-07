@@ -21,4 +21,6 @@ func TestSecretbox(t *testing.T) {
 	if err == nil {
 		t.Errorf("tag validation failed")
 	}
+
+	_, _ = SharedKey(key, key)
 }
