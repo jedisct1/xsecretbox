@@ -17,7 +17,7 @@ func TestSecretbox(t *testing.T) {
 	}
 
 	dst[0]++
-	dec, err = Open(nil, nonce[:], dst[:], key[:])
+	_, err = Open(nil, nonce[:], dst[:], key[:])
 	if err == nil {
 		t.Errorf("tag validation failed")
 	}
