@@ -2,9 +2,7 @@
 github.com/aead/chacha20/chacha
 # github.com/aead/poly1305 v0.0.0-20180717145839-3fee0db0b635
 github.com/aead/poly1305
-# github.com/cloudflare/circl v0.0.0-20190621185434-0ba9a9382e8b
-github.com/cloudflare/circl/dh/x25519
-github.com/cloudflare/circl/math/fp25519
-github.com/cloudflare/circl/internal/conv
-# golang.org/x/sys v0.0.0-20190624142023-c5567b49c5d0
+# golang.org/x/crypto v0.0.0-20190621222207-cc06ce4a13d4
+golang.org/x/crypto/curve25519
+# golang.org/x/sys v0.0.0-20190621203818-d432491b9138
 golang.org/x/sys/cpu
