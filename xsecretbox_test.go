@@ -42,5 +42,4 @@ func TestSharedKey(t *testing.T) {
 	if !bytes.Equal(expected[:], shared[:]) {
 		t.Errorf("got %x instead of %x", expected, shared)
 	}
-
 }
