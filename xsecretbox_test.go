@@ -43,3 +43,16 @@ func TestSharedKey(t *testing.T) {
 		t.Errorf("got %x instead of %x", expected, shared)
 	}
 }
+
+func TestSharedKeyRejectsLowOrderPublicKey(t *testing.T) {
+	secretKey := [32]byte{1}
+	var publicKey [32]byte
+	key1, err := SharedKey(secretKey, publicKey)
+	if err == nil {
+		t.Fatal("Low-order public key accepted")
+	}
+	key2, _ := SharedKey(secretKey, publicKey)
+	if key1 == key2 {
+		t.Fatal("Predictable shared key for a low-order public key")
+	}
+}
